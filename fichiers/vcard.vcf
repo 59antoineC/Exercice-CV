@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Consil;Antoine;;M.;
+FN:Antoine Consil
+TEL;TYPE=cell,voice;VALUE=uri:tel:+33-768580692
+ADR;TYPE=HOME;LABEL="109 rue Lefebvre d’Orval\n, 59500 DOUAI":;;109 rue Lefebvre d’Orval;;DOUAI;59500;
+EMAIL:antoine.consil.dev@gmail.com
+REV:20080424T195243Z
+x-qq:21588891
+END:VCARD
