@@ -114,6 +114,8 @@ a#retour:hover, a#retour:focus, a#vcard:hover, a#vcard:focus	{background-color: 
 
 address	{font-style: normal}
 
+#rue, #cpville {margin:0;padding:0;line-height:1em;}
+
 .partie {display:none;
 	width:100% - .5em;
 	margin:0.2em 0;
