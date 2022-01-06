@@ -21,8 +21,6 @@ function rotateCard(id)	{
 				}
 			visible.style.display = "block";
 			inner.style.transform = "rotateY(180deg)";
-			let menu = document.getElementById("menu");
-			menu.style.display = "none";
 			return false;
 			}
 
@@ -32,8 +30,6 @@ function retour()	{let inner = document.getElementById("inner");
 			for (i = 0; i < partie.length; i++) {
 			  partie[i].style.display = "none";
 				}
-			let menu = document.getElementById("menu");
-			menu.style.display = "block";
 			inner.style.transform = "rotateY(0)";
 			return false;
 			}
