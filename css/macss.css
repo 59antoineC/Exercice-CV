@@ -1,33 +1,33 @@
-body	{padding: 0 10px;
-		display: flex;
-	    flex-flow : row wrap;
-	    justify-content: space-around;
-		max-width: 1050px;
+body	{padding:0 10px;
+		display:flex;
+	    flex-flow :row wrap;
+	    justify-content:space-around;
+		max-width:1050px;
 		font-size:1em;
-		margin: 0 auto;}
+		margin:0 auto;}
 
 header	{width:100%;
 	margin:0;
 	padding:0;
-	border: solid 2px;
-	border-radius: 6px;}
+	border:solid 2px;
+	border-radius:6px;}
 
-li	{list-style: square;line-height:1.2em;margin-bottom: .4em;}
+li	{list-style:square;line-height:1.2em;margin-bottom:.4em;}
 h1		{width:100% - 4px;
-		font-size: 2em;
-		text-align: center;
-		background-color: black;
-		color: white;
+		font-size:2em;
+		text-align:center;
+		background-color:black;
+		color:white;
 		padding:20px 0;
 		margin:0;
-		border: solid 2px white;
-		border-radius: 6px;
+		border:solid 2px white;
+		border-radius:6px;
 		}
 
-h1	{animation: mymove 2s infinite alternate;}
+h1	{animation:mymove 2s infinite alternate;}
 
-@keyframes mymove	{from {background-color: black;}
-					to {background-color: darkblue;}
+@keyframes mymove	{from {background-color:black;}
+					to {background-color:darkblue;}
 					}
 
 h2		{font-size:1.8em;}
@@ -42,61 +42,66 @@ acronym, abbr	{text-decoration:none}
 
 .flip-card	{margin:0;
 			padding:0;
-			width: 100%;
-			height: 100%;}
+			width:100%;
+			height:100%;}
 
 /*.flip-card:hover #inner {
-  transform: rotateY(180deg);
+  transform:rotateY(180deg);
 }*/
 
-#inner	{position: relative;
-		width: 100%;
-		height: 100%;
-		transition: transform 0.8s;
-		transform-style: preserve-3d;}
+#inner	{position:relative;
+		width:100%;
+		height:100%;
+		transition:transform 0.8s;
+		transform-style:preserve-3d;}
 
-.pile,.face	{position: absolute;
-		width: 100%;
-		height: 100%;
-		backface-visibility: hidden;
-		background-color: #bbb;}
+.pile,.face	{position:absolute;
+		width:100%;
+		height:100%;
+		backface-visibility:hidden;
+		background-color:#bbb;}
 
 .pile	{width:100%;
 	margin:0.2em 0;
-	transform: rotateY(180deg);
+	transform:rotateY(180deg);
 	}
 
-a#retour	{position: absolute;
+	.face	{width:100%;
+
+	transform:rotateY(0deg);
+	}
+
+a#retour	{position:absolute;
 			top:1em;
 			right:1em;
 			padding:.2em;
-			text-decoration: none;
-			color: black;
-			border: solid 2px;
-			border-radius: 6px;
-			background-color: #ffffff;
+			text-decoration:none;
+			color:black;
+			border:solid 2px;
+			border-radius:6px;
+			background-color:#ffffff;
 			}
 
 a#vcard	{display:inline-block;
 		width:auto;
-		text-decoration: none;
-		color: black;
-		border: solid 2px;
-		border-radius: 6px;
-		background-color: #ffffff;
+		text-decoration:none;
+		color:black;
+		border:solid 2px;
+		border-radius:6px;
+		background-color:#ffffff;
 		padding:.2em;
-		font-style: bold;
-		font-size: 1.2em;
+		font-style:bold;
+		font-size:1.2em;
 		}
 
-a#retour:hover, a#retour:focus, a#vcard:hover, a#vcard:focus	{background-color: #aaaaaa;}
+a#retour:hover, a#retour:focus, a#vcard:hover, a#vcard:focus	{background-color:#aaaaaa;}
 
 .face	{}
 
 #menu	{margin:0;padding:0;height:auto;}
 
-#menu li	{list-style: none;
-			font-size: 2em;
+#menu li	{list-style:none;
+			font-size:2em;
 			padding:0;
 			margin:0.2em 0;
 			text-align:center;}
@@ -105,14 +110,14 @@ a#retour:hover, a#retour:focus, a#vcard:hover, a#vcard:focus	{background-color: 
 			width:100% - 2px;
 			padding:0.2em 0;
 			text-decoration:none;
-			color: #000000;
-			border: solid 2px;
-			border-radius: 6px;
-			background-color: #eeeeee;}
+			color:#000000;
+			border:solid 2px;
+			border-radius:6px;
+			background-color:#eeeeee;}
 
-#menu li a:hover,#menu li a:focus	{background-color: #aaaaaa;}
+#menu li a:hover,#menu li a:focus	{background-color:#aaaaaa;}
 
-address	{font-style: normal}
+address	{font-style:normal}
 
 #rue, #cpville {margin:0;padding:0;line-height:1em;}
 
@@ -120,20 +125,20 @@ address	{font-style: normal}
 	width:100% - .5em;
 	margin:0.2em 0;
 	padding-left:.5em;
-	border: solid 2px;
-	border-radius: 6px;
-	background-color: #eeeeee;
-	margin-bottom: 1em;
+	border:solid 2px;
+	border-radius:6px;
+	background-color:#eeeeee;
+	margin-bottom:1em;
 	}
 
 
 /* IPAD */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width :768px) and (max-device-width :1024px) {
 #menu li 	{float:left;
 		    width:49%;
-		    margin: .5%;
+		    margin:.5%;
 			}
 
-#menu li a	{line-height: 3em;
+#menu li a	{line-height:3em;
 			}
 }
