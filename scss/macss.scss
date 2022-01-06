@@ -1,0 +1,147 @@
+@use 'normalize';
+
+$FontSize : 1em;
+$BackGroundColor1 : #eeeeee;
+$BackGroundColor2 : #aaaaaa;
+$Border : solid 2px;
+$BorderRadius: 6px;
+
+body	{padding: 0 10px;
+		display: flex;
+	    flex-flow : row wrap;
+	    justify-content: space-around;
+		max-width: 1050px;
+		font-size: $FontSize;
+		margin: 0 auto;}
+
+header	{width:100%;
+	margin:0;
+	padding:0;
+	border: $Border;
+	border-radius: $BorderRadius;}
+
+li	{list-style: square;
+	line-height: 1.2em;
+	margin-bottom: .4em;}
+
+h1		{width:100% - 4px;
+		font-size: $FontSize * 2;
+		text-align: center;
+		background-color: black;
+		color: white;
+		padding:20px 0;
+		margin:0;
+		border: $Border white;
+		border-radius: $BorderRadius;
+		}
+
+h1	{animation: mymove 2s infinite alternate;}
+
+@keyframes mymove	{from {background-color: black;}
+					to {background-color: darkblue;}
+					}
+
+h2		{font-size: $FontSize * 1.8;}
+
+h3		{font-size: $FontSize * 1.5;
+		margin-bottom:0;}
+
+h4		{font-size: $FontSize * 1.2;
+		margin-top:0;}
+
+acronym	{text-decoration:none}
+
+.flip-card	{margin:0;
+			padding:0;
+			width: 100%;
+			height: 100%;}
+
+/*.flip-card:hover #inner {
+  transform: rotateY(180deg);
+}*/
+
+#inner	{position: relative;
+		width: 100%;
+		height: 100%;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;}
+
+.pile,.face	{position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+		background-color: $BackGroundColor2;}
+
+.pile	{width:100%;
+	margin:0.2em 0;
+	transform: rotateY(180deg);
+	}
+
+a#retour	{position: absolute;
+			top:1em;
+			right:1em;
+			padding:.2em;
+			text-decoration: none;
+			color: black;
+			border: $Border white;
+			border-radius: $BorderRadius;
+			}
+
+a#vcard	{display:inline-block;
+		width:auto;
+		text-decoration: none;
+		color: black;
+		border: $Border;
+		border-radius: $BorderRadius;
+		background-color: white;
+		padding:.2em;
+		font-style: bold;
+		font-size: $FontSize * 1.2;
+		}
+
+a#retour:hover, a#retour:focus, a#vcard:hover, a#vcard:focus	{background-color: $BackGroundColor2;}
+
+.face	{}
+
+#menu	{margin:0;padding:0;}
+
+#menu li	{list-style: none;
+			font-size: $FontSize * 2;
+			padding:0;
+			margin:0.2em 0;
+			text-align:center;}
+
+#menu li a	{display:block;
+			width:100% - 2px;
+			padding:0.2em 0;
+			text-decoration:none;
+			color: black;
+			border: $Border;
+			border-radius: $BorderRadius;
+			background-color: $BackGroundColor1;}
+
+#menu li a:hover,#menu li a:focus	{background-color: $BackGroundColor2;}
+
+address	{font-style: normal}
+
+.partie {display:none;
+	width:100% - .5em;
+	margin:0.2em 0;
+	padding-left:.5em;
+	border: $Border;
+	border-radius: $BorderRadius;
+	background-color: $BackGroundColor1;
+	margin-bottom: 1em;
+	}
+
+
+/* IPAD */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+#menu li 	{float:left;
+		    width:49%;
+		    margin: .5%;
+			}
+
+#menu li a	{line-height: 3em;}
+}
+
