@@ -15,6 +15,8 @@ function rotateCard(id)	{
 			let inner = document.getElementById("inner");
 			let partie = inner.getElementsByClassName("partie");
 			let visible = document.getElementById(id);
+			let menu = document.getElementById(id);
+			menu.style.display = "none";
 			let i;
 			for (i = 0; i < partie.length; i++) {
 			  partie[i].style.display = "none";
@@ -30,6 +32,8 @@ function retour()	{let inner = document.getElementById("inner");
 			for (i = 0; i < partie.length; i++) {
 			  partie[i].style.display = "none";
 				}
+			let menu = document.getElementById(id);
+			menu.style.display = "block";
 			inner.style.transform = "rotateY(0)";
 			return false;
 			}
