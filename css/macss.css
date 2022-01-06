@@ -93,7 +93,7 @@ a#retour:hover, a#retour:focus, a#vcard:hover, a#vcard:focus	{background-color: 
 
 .face	{}
 
-#menu	{margin:0;padding:0;}
+#menu	{margin:0;padding:0;height:auto;}
 
 #menu li	{list-style: none;
 			font-size: 2em;
